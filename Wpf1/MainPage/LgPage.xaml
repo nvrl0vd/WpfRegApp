@@ -1,0 +1,56 @@
+﻿<Page x:Class="Wpf1.MainPage.LgPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf1.MainPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="550"
+      Title="Авторизация">
+
+    <Grid>
+        <StackPanel
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center">
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock 
+                    Width="50"
+                    Text="Логин: "
+                    Foreground="White"/>
+                <TextBox
+                    Width="180"
+                    />
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock 
+                    Width="50"
+                    Text="Пароль: "
+                    Foreground="White"/>
+                <TextBox
+                    Width="180"
+                    Height="20"
+                    />
+            </StackPanel>
+            <StackPanel
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    Name="BtnLg"
+                    Content="Войти"
+                    Style="{StaticResource BtnS1}"
+                    />
+                <Button
+                    Name="BtnCrAcc"
+                    Content="Создать аккаунт"
+                    Style="{StaticResource BtnS1}" Click="BtnCrAcc_Click"
+
+                    />
+            </StackPanel>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
